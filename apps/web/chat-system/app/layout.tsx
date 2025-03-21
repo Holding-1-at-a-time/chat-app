@@ -1,6 +1,7 @@
 // apps/chat-system/app/layout.tsx
 import React from "react";
 import "../../styles/globals.css";
+import { JSX } from "react/jsx-runtime";
 
 /**
  * Root layout for the Chat System.

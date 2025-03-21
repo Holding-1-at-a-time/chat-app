@@ -1,6 +1,6 @@
 // apps/chat-system/app/page.tsx
-import React from "react";
-import Chat from "../components/Chat";
+import Chat from "@/components/chat";
+import React, { JSX } from "react";
 
 /**
  * Chat UI page for real-time messaging.
