@@ -1,13 +1,13 @@
 // apps/notification-engine/app/page.tsx
-import { Button } from "@workspace/ui/components/button";
-import React, { JSX, useState } from "react";
+
+import React, { useState } from "react";
 
 /**
  * Dashboard page for sending appointment/payment alerts.
  *
  * In production, tenant and user IDs come from the authentication context.
  */
-export default function NotificationDashboard(): JSX.Element {
+export default function NotificationDashboard() {
     const [loading, setLoading] = useState<boolean>(false);
 
     /**
@@ -40,9 +40,9 @@ export default function NotificationDashboard(): JSX.Element {
             <h1 className="text-2xl font-bold mb-4">
                 Notification Engine Dashboard
             </h1>
-            <Button onClick={handleSendAlert} disabled={loading}>
+            <button onClick={handleSendAlert} disabled={loading}>
                 {loading ? "Sending Alert..." : "Send Alert Notification"}
-            </Button>
+            </button>
         </div>
     );
 }

@@ -1,9 +1,10 @@
 // apps/chat-system/components/Chat.tsx
 import React, { useState, useEffect, useRef } from "react";
-
-import type { ChatMessage } from "@apps/web/types/chat.types";
-import { Button } from "@workspace/ui/components/button";
+import { ChatMessage } from "../chat-system/app/types";
 import { Input } from "@workspace/ui/components/input";
+import { Button } from "@workspace/ui/components/button"
+
+
 /**
  * Chat component for sending and receiving messages in real time.
  * Uses WebSockets to receive live updates.
